@@ -2,14 +2,18 @@
     margin-top: 5rem;
     flex-direction: column;
 }
-
+@media(max-width:768px) {
+    .col {
+        flex-direction: column;
+    }
+}
 .col {
     display: flex;
     align-items: center;
     gap: 100px
     ;
     justify-content: space-between;
-    flex-direction: column;
+
 }
 .text {
     line-height: 1.5;
