@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/products.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="backgraund-1"></div>
+    <div class="login-1 fixed-top position-sticky " >
+        <button class="close-btn">x</button>
+                <div class="boxss">
+                    
+                    <div class="text-1">
+                        <h1>Login</h1>
+                        <p>Welcome To Our Website</p>
+                    </div>
+                <div class="input">
+                    <input type="email"
+                    placeholder="Email" class="form-control">
+                    <input type="password"
+                    placeholder="password" class="form-control" >
+                </div>
+                <div class="links ">
+                <a href="#">Forget Your Password ?</a>
+            </div>
+                <div class="d-text ">
+                    <li><input type="checkbox">Remember Me</li>
+                    <button class="btn-2" >Log in</button>
+                    <p>Don`t Have Account ? <span>Create a New Account</span></p>
+                </div>
+                </div>
+            </div>
+        
+    <div class="massege">
+
+        <i class="fa-solid fa-comment fa-2x"></i>
+    </div>
+    <nav>
+        <div class="container">
+            <div class="containe  fixed-top d-flex ">
+                <div class="logo">
+                    <img class="img-fluid" src="images/logo.png" alt="">
+                </div>
+
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="Departments.html">Departments</a></li>
+                    <li><a href="Offers.html">Offers</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+
+
+                <form class="d-flex">
+                    <a href="./healthybites ar/products-ar.html">AR</a>
+                    <i class="fa-solid fa-magnifying-glass fa-2x flex-start"></i>
+                    </form>
+                <button class="btn" >Log in</button>
+                <div class="menu">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="Departments.html">Departments</a></li>
+                <li><a href="Offers.html">Offers</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li> <a href="#" class="login">Log in</a></li>
+            </div>
+        </div>
+    </nav>
+    <div class="serch mt-6">
+        <h1>Products</h1>
+        <div class="container-fluid">
+            <form class="d-flex" role="search">
+                <input type="text" name="search" value="" form="searchForm" class="form-control input-search"
+                    placeholder="Search the Product" aria-label="search" aria-describedby="basic-addon1">
+                <button class="btn-1" type="submit"><i class="fa-solid fa-magnifying-glass fa-2x"></i></button>
+                <div class="icon"><i class="fa-solid fa-magnifying-glass fa-2x"></i></div>
+            </form>
+        </div>
+    </div>
+    <div class="landing d-flex">
+        <div class="options">
+            <div class="row">
+                <div class="col col-lg-12">
+                    <h2>Products Department</h2>
+
+                </div>
+                <ul class="checkbox">
+                    <li><input id="all" type="checkbox" onclick="toggleOffer('all')" data-cat=".all"> Nuts & Seeds</li>
+                    <li><input id="Oil" type="checkbox" onclick="toggleOffer('Oil')" data-cat=".Oil"> Oil</li>
+                    <li><input id="Honey" type="checkbox" onclick="toggleOffer('Honey')" data-cat=".Honey"> Honey</li>
+                    <li><input id="fruits" type="checkbox" onclick="toggleOffer('fruits')" data-cat=".fruits"> Dried fruits</li>
+                    <li><input id="Healthy" type="checkbox" onclick="toggleOffer('Healthy')" data-cat=".Healthy"> Healthy packages</li>
+                    <li><input id="products" type="checkbox" onclick="toggleOffer('products')" data-cat=".products"> Other products</li>
+                    <li><input id="Flour" type="checkbox" onclick="toggleOffer('Flour')" data-cat=".Flour"> Flour</li>
+                    <li><input id="Natural" type="checkbox" onclick="toggleOffer('Natural')" data-cat=".Natural"> Natural wooden tableware</li>
+                    <li><input id="Ramadan" type="checkbox" onclick="toggleOffer('Ramadan')" data-cat=".Ramadan"> Ramadan gift boxes</li>
+
+
+                </ul>
+                <div class="reang">
+                    <h3>Products Price
+                    </h3>
+                    <input type="range" value="1" min="1" max="100000" class="form-range" id="myRange">
+                </div>
+            </div>
+            <div class="inbut">
+                <input type="text" class="form-control custom-input inputP_ from" name="min" value="1">
+                <input type="text" class="form-control custom-input inputP_ to" name="max" id="priceTo" value="100000">
+            </div>
+            <button type="submit" form="searchForm">
+
+                Filter </button>
+        </div>
+        <div class="card ">
+            <div class="container-fluid align-items-center">
+
+                <div class="row ">
+                    <div class="title ">
+                        <h1>Products</h1>
+
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card Oil">
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card Oil">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                                <i class="fa-solid fa-heart fa-2x icons"></i>
+                            </div>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card Oil">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                                <i class="fa-solid fa-heart fa-2x icons"></i>
+                            </div>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card Oil">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card Oil">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card Oil">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card Oil">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card Honey">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card Honey">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card Honey">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card Honey">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card Honey">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card Honey">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card Honey">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4 col-md-6 col-12 d-flex">
+                        <div class="box-card fruits">
+
+                            <div class="images">
+                                <img src="images/card4.png" alt="" class="img-fluid">
+                            </div>
+                            <i class="fa-solid fa-heart fa-2x icons"></i>
+                            <div class="title-2">
+                                <h1>Dried Banana (50 g)</h1>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="footer-card">
+                                <p>50.00 EGP</p>
+                                <i class="fa-solid fa-bag-shopping "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <section class="footer">
+        <div class="container-fluid align-items-center">
+            <div class="boxs d-flex">
+                <div class="col col-lg-4">
+                    <div class="box-11">
+                        <img class="img-fluid" src="images/logo.png" alt="">
+                        <p>Healthy Bites is an Egyptian brand of Smart Nutrition Solutions that offers the best healthy
+                            foods.
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-sm-12 mb-4">
+                    <div class="box-11">
+                        <h2>Products</h2>
+                        <ul>
+                            <li><a href="#">Nuts & Seeds</a></li>
+                            <li><a href="#">Oil</a></li>
+                            <li><a href="#">Honey</a></li>
+                            <li><a href="#">Dried fruits</a></li>
+                            <li><a href="#">Healthy packages</a></li>
+                            <li><a href="#">Other products</a></li>
+                            <li><a href="#">Flour</a></li>
+                            <li><a href="#">Natural wooden tableware</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-12">
+                    <div class="box-11">
+                        <h2>Discover</h2>
+                        <ul>
+                            <li><a href="#">Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-12">
+                    <div class="box-11">
+                        <h2>About Us</h2>
+                        <ul>
+                            <li><a href="#">Site Tour</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-12">
+                    <div class="box-11">
+                        <h2>Help</h2>
+                        <ul>
+                            <li><a href="#">Return Procedure</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="box-12 d-flex">
+                        <i class="fa-solid fa-phone fa-2x"></i>
+                        <div class="box-13">
+                            <h3>Talk to Us</h3>
+                            <p>01065871661</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 ">
+                    <div class="box-12 d-flex">
+
+                        <i class="fa-solid fa-circle-question fa-2x"></i>
+                        <div class="box-13">
+                            <h3>Help Center</h3>
+                            <p>info@healthybitesstore.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 ">
+                    <div class="box-12 d-flex">
+                        <i class="fa-regular fa-envelope fa-2x"></i>
+                        <div class="box-13">
+                            <h3>Write to Us
+                            </h3>
+                            <p>info@healthybitesstore.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="container-fluid align-items-center">
+            <div class="box-14">
+                <h3>
+                    "@ All Rights Reserved to the Company"
+                </h3>
+                <div class="icons">
+                    <i class="fa-brands fa-snapchat fa-2x"></i>
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                    <i class="fa-brands fa-instagram fa-2x "></i>
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
